@@ -55,12 +55,12 @@
 		<div class="carousel slide" id="carousel" align="center">
 			
 			<ol class="carousel-indicators">
-				<li class="active" data-target="#carousel" data-slide="0"></li>
-   				<li data-target="#carousel" data-slide="1"></li>
-   				<li data-target="#carousel" data-slide="2"></li>
-   				<li data-target="#carousel" data-slide="3"></li>
-   				<li data-target="#carousel" data-slide="4"></li>
-   				<li data-target="#carousel" data-slide="5"></li>
+				<li class = "active" data-target = "#carousel" data-slide-to = "0"></li>
+                <li data-target = "#carousel" data-slide-to = "1"></li>
+   				<li data-target = "#carousel" data-slide-to = "2"></li>
+   				<li data-target = "#carousel" data-slide-to = "3"></li>
+   				<li data-target = "#carousel" data-slide-to = "4"></li>
+   				<li data-target = "#carousel" data-slide-to = "5"></li>
 			</ol>
 		
 			
@@ -158,6 +158,52 @@
 				</p>
 			</div>
 		</div>
+        
+        <!-- Кнопка Вверх -->
+        
+        <style>
+            .back-to-top {
+                cursor: pointer;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display:none;
+                color: white;
+                background: black;
+            }
+        </style>
+        
+        <script>
+            $(document).ready(function()
+            {
+                $(window).scroll(function () 
+                {
+                    if ($(this).scrollTop() > 50) 
+                    {
+                        $('#back-to-top').fadeIn();
+                    } 
+                    else 
+                    {
+                        $('#back-to-top').fadeOut();
+                    }
+                });
+                
+                // scroll body to 0px on click
+                $('#back-to-top').click(function () 
+                {
+                    $('#back-to-top').tooltip('hide');
+                    $('body,html').animate({ scrollTop: 0}, 800);
+                    return false;
+                });
+ 
+                $('#back-to-top').tooltip('show');
+ 
+            });
+        </script>
+ 
+        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Вверх" data-toggle="tooltip" data-placement="left" style = "background: black">
+            <span class="glyphicon glyphicon-chevron-up" style = "color: white; background:black"></span>
+        </a>
 			
 	<!---			   
 		<p class="fig"><img src="../tools/img/broken-noise.jpg" 
