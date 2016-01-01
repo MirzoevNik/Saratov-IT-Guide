@@ -1,0 +1,7 @@
+#header {
+    position: absolute;
+    width: 100%;
+    min-width: 500px;
+    height: 500px;
+    background: #F0FFFF url(../tools/img/head.jpg) repeat-x left top;
+}
