@@ -3,12 +3,20 @@
 <html>
 		<head>
 		<title> Saratov IT Guide </title>
-		<link href = "css/bootstrap.css" rel = "stylesheet">
+		<link href = "css/bootstrap.css" rel = "stylesheet"></link>
 		<style>
    			.fig {
-    		  text-align: center; /* Выравнивание по центру */ 
+                text-align: center; /* Выравнивание по центру */ 
    			}
   		</style>
+        <style>
+			.layer2 {
+				font: 14pt PlainScriptCTT обычный;  
+		    } 
+			.h1{
+			    font: 200% PlainScriptCTT обычный;
+			}
+	    </style>
   	</head>
 	<body>
 		
@@ -52,10 +60,88 @@
 			<img src="../tools/img/grid_dynamics2.png">
 		</div>
 	  
-	  
-	  
 	  	<script src = "http://code.jquery.com/jquery-latest.js"></script>
 		<script src = "js/bootstrap.js"></script>
+        
+        <div class="layer2">
+		<h1>О компании:</h1>
+        <p>Компания Grid Dynamics была основана в 2006 году в США. Основная сфера деятельности компании — это разработка высокотехнологичных платформ для электронной коммерции (eCommerce), финансовой и других сфер бизнеса. Сегодня у GD открыто пять офисов по всему миру: два в России — в Саратове и Санкт-Петербурге, два в Европе — в Кракове и Харькове, а головной офис находится в Кремниевой долине в городе Менло Парк, штат Калифорния.</p>
+        </div>
+        
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-6" >
+                    <div id = "accordion" class = "panel-group">
+                        
+                        <div class = "panel panel-default">
+                            <div class = "panel-heading" style = "background: black">
+                                <h4 class = "panel-title">
+                                    <a href="#collapse-1" data-parent = "#accordion" data-toggle="collapse" style = "color: white">Клиенты компании</a>
+                                </h4>
+                            </div>
+                            <div id = "collapse-1" class = "panel-collapse collapse">
+                                <div class = "panel-body">
+                                    <p>eBay</p>
+                                    <p>Microsoft</p>
+                                    <p>VMware</p>
+                                    <p>PayPal</p>
+                                    <p>Yahoo!</p>
+                                    <p>Macy’s</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class = "panel panel-default">
+                            <div class = "panel-heading" style = "background: black">
+                                <h4 class = "panel-title">
+                                    <a href="#collapse-2" data-parent = "#accordion" data-toggle="collapse" style = "color: white">Руководство компании</a>
+                                </h4>
+                            </div>
+                            <div id = "collapse-2" class = "panel-collapse collapse">
+                                <div class = "panel-body">
+                                    <p>Виктория Лившиц</p>
+                                    <p>Ананьев Алексей Павлович (Саратов)</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class = "panel panel-default">
+                            <div class = "panel-heading" style = "background: black">
+                                <h4 class = "panel-title">
+                                    <a href="#collapse-3" data-parent = "#accordion" data-toggle="collapse" style = "color: white">Саратовский филиал</a>
+                                </h4>
+                            </div>
+                            <div id = "collapse-3" class = "panel-collapse collapse">
+                                <div class = "panel-body">
+                                    <p>Саратовское отделение располагается в одной из крупных деловых зон города — на седьмом этаже бизнес-центра «Ковчег» на Вавилова. В офисе компании работает более ста сотрудников. Для работников компании существует бенефитная программа и медицинское обслуживание. В саратовском филиале для улучшения производительности сотрудников оборудованы тренажерный зал, зал для йоги, комната отдыха, стол для настольного тенниса и многое другое. Помимо этого проводятся митинги (встречи) всех сотрудников, различные выездные корпоративы и бесплатные курсы английского языка. Компания проводит ежегодные летние и зимние практики для студентов.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class = "panel panel-default">
+                            <div class = "panel-heading" style = "background: black">
+                                <h4 class = "panel-title">
+                                    <a href="#collapse-4" data-parent = "#accordion" data-toggle="collapse" style = "color: white">Вакансии в Саратове</a>
+                                </h4>
+                            </div>
+                            <div id = "collapse-4" class = "panel-collapse collapse">
+                                <div class = "panel-body">
+                                    <p>Java-инженер(eCommerce)</p>
+                                    <p>DevOps-инженер</p>
+                                    <p>Java Enterprise разработчик</p>
+                                    <p>UI-инженер</p>
+                                    <p>QA-инженер</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
+                <div class = "col-md-6"></div>
+            </div>
+        </div>   
+
         
         <!-- Кнопка Вверх -->
         
