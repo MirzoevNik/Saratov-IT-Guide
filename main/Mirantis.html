@@ -8,14 +8,23 @@
    			.fig {
     			text-align: center; /* Выравнивание по центру */ 
    			}
-  		</style>
-  		<style>
+            
   			.layer3 {
-				    font: 14pt PlainScriptCTT обычный;  
-		  		    } 
+				font: 14pt PlainScriptCTT обычный;  
+		    } 
+            
 			h1{
 			    font: 200% PlainScriptCTT обычный;
-			  }
+			}
+            
+            h4 {
+                text-indent: 30px;
+			}
+            
+            p {
+                text-indent: 50px;
+            }
+            
 	   </style>
   	</head>
 	<body>
@@ -63,57 +72,15 @@
 	  	<script src = "http://code.jquery.com/jquery-latest.js"></script>
 		<script src = "js/bootstrap.js"></script>
         
-        <!-- Кнопка Вверх -->
-        
-        <style>
-            .back-to-top {
-                cursor: pointer;
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                display:none;
-                color: white;
-                background: black;
-            }
-        </style>
-        
-        <script>
-            $(document).ready(function()
-            {
-                $(window).scroll(function () 
-                {
-                    if ($(this).scrollTop() > 50) 
-                    {
-                        $('#back-to-top').fadeIn();
-                    } 
-                    else 
-                    {
-                        $('#back-to-top').fadeOut();
-                    }
-                });
-                
-                // scroll body to 0px on click
-                $('#back-to-top').click(function () 
-                {
-                    $('#back-to-top').tooltip('hide');
-                    $('body,html').animate({ scrollTop: 0}, 800);
-                    return false;
-                });
- 
-                $('#back-to-top').tooltip('show');
- 
-            });
-        </script>
-        
         <div class = "container-fluid">
             <div class="layer3">
-            <h1>О компании:</h1>
+            <h1 align = "center">О компании</h1>
             <p>Mirantis является лидером среди компаний, специализирующихся в области внедрения решений на базе OpenStack. Компания обеспечивает полный цикл разработки и реализации cloud-стратегии: от анализа имеющегося в распоряжении клиента оборудования до интеграции облака, разработанного с учетом специфики задачи обучения персонала. Клиенты Mirantis не просто витают в облаках — они делают это с выгодой для своего бизнеса. Ведь проекты, реализованные на основе OpenStack, не обременены никакими лицензионными выплатами.Головной офис компании находится в Маунтин Вью (США). Всего в компании работает около 700 человек.</p>
           	<br>
           	<br>
-          	<h1>Саратоский филиал:</h1>
-          	<p>Саратовский офис расположен в центре города (ул. Университетская). В нём работают 200 человек. Несмотря на то, что в компании работают высококвалифицированные специалисты, менеджеры и руководители проектов проводят TechTalks, чтобы взаимодействие между сотрудниками достигло максимально высокого и продуктивного уровня. Также устраиваются курсы повышения знаний по английскому языку.
-Инженеры Mirantis не только участвуют в разработке IT продуктов мирового уровня, используя передовые технологии, но и работают над развитием экспертизы в области клауд-компьютинга, занимаясь преподавательской деятельностью и передавая студентам накопленные практические знания и опыт. С этой целью были разработаны курсы «Технологии облачных вычислений», «Обеспечение качества ПО», «Современные технологии тестирования в распределенных и клауд-системах», «Программирование на языке Python», «Деплоймент инжиниринг», «Java-программирование» и др. Также на факультете КНиИТ была открыта базовая кафедра «Технологий программирования» и выплачивается стипендия отличившимся студентам.</p>
+          	<h1 align = "center">Саратоский филиал</h1>
+          	<p>Саратовский офис расположен в центре города (ул. Университетская). В нём работают 200 человек. Несмотря на то, что в компании работают высококвалифицированные специалисты, менеджеры и руководители проектов проводят TechTalks, чтобы взаимодействие между сотрудниками достигло максимально высокого и продуктивного уровня. Также устраиваются курсы повышения знаний по английскому языку.</p>
+            <p>Инженеры Mirantis не только участвуют в разработке IT продуктов мирового уровня, используя передовые технологии, но и работают над развитием экспертизы в области клауд-компьютинга, занимаясь преподавательской деятельностью и передавая студентам накопленные практические знания и опыт. С этой целью были разработаны курсы «Технологии облачных вычислений», «Обеспечение качества ПО», «Современные технологии тестирования в распределенных и клауд-системах», «Программирование на языке Python», «Деплоймент инжиниринг», «Java-программирование» и др. Также на факультете КНиИТ была открыта базовая кафедра «Технологий программирования» и выплачивается стипендия отличившимся студентам.</p>
             </div>
         </div>
         
@@ -162,7 +129,7 @@
         <br>
         <br>
         
-        <div class = "container-fluid">
+        <div class = "container-fluid" style = "text-indent: 50px">
             <div class = "row">
                 <div class = "col-md-6" class="layer3">
                     <div id = "accordion" class = "panel-group">
@@ -175,12 +142,12 @@
                             </div>
                             <div id = "collapse-1" class = "panel-collapse collapse">
                                 <div class = "panel-body">
-                                    <p>CISCO</p>
-                                    <p>Intel</p>
-                                    <p>NASA</p>
-                                    <p>AT&T</p>
-                                    <p>NetApp</p>
-                                    <p>Ericsson</p>
+                                    <li>CISCO</li>
+                                    <li>Intel</li>
+                                    <li>NASA</li>
+                                    <li>AT&T</li>
+                                    <li>NetApp</li>
+                                    <li>Ericsson</li>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +160,7 @@
                             </div>
                             <div id = "collapse-2" class = "panel-collapse collapse">
                                 <div class = "panel-body">
-                                    <p>Наркайтис Герман Германович (Саратов)</p>
+                                    <li>Наркайтис Герман Германович (Саратов)</li>
                                 </div>
                             </div>
                         </div>
@@ -206,13 +173,13 @@
                             </div>
                             <div id = "collapse-4" class = "panel-collapse collapse">
                                 <div class = "panel-body">
-                                    <p>OpenStack Maintenance Engineer</p>
-                                    <p>Development Manager</p>
-                                    <p>OpenStack Software Engineer</p>
-                                    <p>Python Senior Engineer</p>
-                                    <p>QA Engineer</p>
-                                    <p>DevOps Engineer</p>
-                                    <p>IT Business Analyst</p>
+                                    <li>OpenStack Maintenance Engineer</li>
+                                    <li>Development Manager</li>
+                                    <v>OpenStack Software Engineer</li>
+                                    <li>Python Senior Engineer</li>
+                                    <li>QA Engineer</li>
+                                    <li>DevOps Engineer</li>
+                                    <li>IT Business Analyst</li>
                                 </div>
                             </div>
                         </div>
@@ -224,6 +191,47 @@
             </div>
         </div>   
 
+        <!-- Кнопка Вверх -->
+        
+        <style>
+            .back-to-top {
+                cursor: pointer;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display:none;
+                color: white;
+                background: black;
+            }
+        </style>
+        
+        <script>
+            $(document).ready(function()
+            {
+                $(window).scroll(function () 
+                {
+                    if ($(this).scrollTop() > 50) 
+                    {
+                        $('#back-to-top').fadeIn();
+                    } 
+                    else 
+                    {
+                        $('#back-to-top').fadeOut();
+                    }
+                });
+                
+                // scroll body to 0px on click
+                $('#back-to-top').click(function () 
+                {
+                    $('#back-to-top').tooltip('hide');
+                    $('body,html').animate({ scrollTop: 0}, 800);
+                    return false;
+                });
+ 
+                $('#back-to-top').tooltip('show');
+ 
+            });
+        </script>
  
         <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" style = "background: black">
             <span class="glyphicon glyphicon-chevron-up" style = "color: white; background:black"></span>

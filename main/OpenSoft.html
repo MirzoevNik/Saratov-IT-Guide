@@ -8,6 +8,21 @@
    			.fig {
     			text-align: center; /* Выравнивание по центру */ 
    			}
+            .layer5 {
+				font: 14pt PlainScriptCTT обычный;  
+		    } 
+            
+			h1 {
+			    font: 200% PlainScriptCTT обычный;
+			}
+            
+            h4 {
+                text-indent: 30px;
+			}
+            
+            p {
+                text-indent: 50px;
+            }
   		</style>
   	</head>
 	<body>
@@ -54,6 +69,109 @@
 	  
 	  	<script src = "http://code.jquery.com/jquery-latest.js"></script>
 		<script src = "js/bootstrap.js"></script>
+        
+        <div class="container-fluid">
+            <div class="layer5">
+            <h1 align = "center">О компании</h1>
+            <p>OpenSoft – это инсорсная компания с небольшими подразделениями, занимающимися разработкой аутсорсовых проектов для заказчиков или коробочных продуктов для потребителей по всему миру. В этой компании есть экспертиза в e-commerce, промышленной автоматизации, разработке для мобильных платформ.</p>
+<p>Основным направлением деятельности компании является создание современных и эффективных программных и IT-решений для различных областей бизнеса. OpenSoft занимается разработкой корпоративных веб-служб, сайтов, клиент-серверных приложений. Кроме того, компания имеет большой опыт создания десктоп-приложений, драйверов, модификации крупных open-source проектов. 
+</p>
+            <br>
+            <br>
+            <h1 align = "center">Саратовский филиал</h1>
+            <p>Адрес компании в Саратове: ул. Вавилова, д. 38/114.</p>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        
+        <!-- Слайдер -->
+		
+		<div class="carousel slide" id="carousel" align="center">
+			
+			<ol class="carousel-indicators">
+				<li class = "active" data-target = "#carousel" data-slide-to = "0"></li>
+                <li data-target = "#carousel" data-slide-to = "1"></li>
+			</ol>
+		
+			
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="../tools/img/opensoft0.jpg"/>
+				</div>
+				<div class="item">
+					<img src="../tools/img/opensoft1.jpg">
+				</div>
+			</div>
+			
+			<a href="#carousel" class="left carousel-control" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a href="#carousel" class="right carousel-control" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>	
+		</div>
+		
+		<br>
+		<br>
+		
+	  <div class = "container-fluid"  style = "text-indent: 50px">
+            <div class = "row">
+                <div class = "col-md-6" class="layer5">
+                    <div id = "accordion" class = "panel-group">
+                        
+                        <div class = "panel panel-default">
+                            <div class = "panel-heading" style = "background: black">
+                                <h4 class = "panel-title">
+                                    <a href="#collapse-1" data-parent = "#accordion" data-toggle="collapse" style = "color: white">Клиенты компании</a>
+                                </h4>
+                            </div>
+                            <div id = "collapse-1" class = "panel-collapse collapse">
+                                <div class = "panel-body">
+                                    <li>OVERNIGHT PRINT</li>
+                                    <li>InkRouter</li>
+                                    <li>ProFIT</li>
+                                    <li>Sylius</li>
+                                    <li>RSS Elit</li>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class = "panel panel-default">
+                            <div class = "panel-heading" style = "background: black">
+                                <h4 class = "panel-title">
+                                    <a href="#collapse-2" data-parent = "#accordion" data-toggle="collapse" style = "color: white">Руководство компании</a>
+                                </h4>
+                            </div>
+                            <div id = "collapse-2" class = "panel-collapse collapse">
+                                <div class = "panel-body">
+                                    <li>Дьяконов Михаил Виталиевич (Саратов)</li>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class = "panel panel-default">
+                            <div class = "panel-heading" style = "background: black">
+                                <h4 class = "panel-title">
+                                    <a href="#collapse-4" data-parent = "#accordion" data-toggle="collapse" style = "color: white">Вакансии в Саратове</a>
+                                </h4>
+                            </div>
+                            <div id = "collapse-4" class = "panel-collapse collapse">
+                                <div class = "panel-body">
+                                    <li>Старший front-end разработчик</li>
+                                    <li>Младший инженер по тестированию</li>
+                                    <li>Ведущий .NET разработчик</li>
+                                    <li>Системный администратор</li>
+                                    <li>Старший PHP-разработчик</li>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <!-- Кнопка Вверх -->
         
