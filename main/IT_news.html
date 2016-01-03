@@ -3,11 +3,16 @@
 <html>
 	<head>
 		<title> Saratov IT Guide </title>
-		<link href ="css/bootstrap.css" rel = "stylesheet"></link>
+		<link href ="css/bootstrap.css" rel = "stylesheet">
+        <link href = "css/font-awesome.css" rel = "stylesheet">
 		<style>
    			.fig {
     			text-align: center; /* Выравнивание по центру */ 
    			}
+            
+            .nav-tabs{
+                margin-bottom: 15px 
+            }
   		</style>
   	</head>
 	<body>
@@ -47,7 +52,52 @@
 				</div>
 			</div>
 		</div>	
-		
+        
+        <!-- Новости -->
+        
+        <div class = "container">
+            <div class  = "row">
+                <div class = "container">
+                    <ul class = "nav nav-tabs">
+                        <li class = "active">
+                            <a href="#">IT компании <span class = "badge">2</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Разработка <span class = "badge">0</span></a>
+                        </li>
+                        <li>
+                            <a href="#">IT-юмор <span class = "badge">0</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Game Zone <span class = "badge">0</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class  = "row">
+                <div class = "col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class = "thumbnail"> 
+                        <img src = "../tools/img/epam2.png" alt ="">
+                        <div class = "caption">
+                            <h3><a href = "#">EPAM проводит набор на курсы .NET(C#)/WEB</a></h3>
+                            <p>В саратовском филиале компании EPAM открыт набор на обучающий курс "Основы разработки .NET приложений".</p>
+                            <a href = "#" class = "btn" style = "background: black; color: white">Подробнее <i class = "fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class = "col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <div class = "thumbnail"> 
+                        <img src = "../tools/img/grid_dynamics2.png" alt ="">
+                        <div class = "caption">
+                            <h3><a href = "#">Зимняя студенческая практика в Grid Dynamics</a></h3>
+                            <p>Саратовский офис компании Grid Dynamics открывает набор студентов IT-специальностей на ежегодную зимнюю практику.</p>
+                            <a href = "#" class = "btn" style = "background: black; color: white">Подробнее <i class = "fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	  
 	  	<script src = "http://code.jquery.com/jquery-latest.js"></script>
 		<script src = "js/bootstrap.js"></script>
