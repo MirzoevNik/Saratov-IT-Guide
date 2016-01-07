@@ -3,8 +3,9 @@
 <html>
 	<head>
 		<title> Saratov IT Guide </title>
-		<link href ="css/bootstrap.css" rel = "stylesheet">
+		<link href = "css/bootstrap.css" rel = "stylesheet">
         <link href = "css/font-awesome.css" rel = "stylesheet">
+        <link href = "css/style.css" rel = "stylesheet">
 		<style>
    			.fig {
     			text-align: center; /* Выравнивание по центру */ 
@@ -62,6 +63,7 @@
                         <li class = "active">
                             <a href="#">IT компании <span class = "badge">2</span></a>
                         </li>
+                        <!--
                         <li>
                             <a href="#">Разработка <span class = "badge">0</span></a>
                         </li>
@@ -70,37 +72,82 @@
                         </li>
                         <li>
                             <a href="#">Game Zone <span class = "badge">0</span></a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
-            <div class  = "row">
-                <div class = "col-xs-6 col-sm-4 col-md-3 col-lg-3">
+            <div class  = "row masonry" data-columns>
+                
+                <div class = "item">
                     <div class = "thumbnail"> 
-                        <img src = "../tools/img/epam2.png" alt ="">
+                        <img src = "../main/news/news1.jpg" alt ="" class = "img-responsive">
                         <div class = "caption">
-                            <h3><a href = "#">EPAM проводит набор на курсы .NET(C#)/WEB</a></h3>
-                            <p>В саратовском филиале компании EPAM открыт набор на обучающий курс "Основы разработки .NET приложений".</p>
-                            <a href = "#" class = "btn" style = "background: black; color: white">Подробнее <i class = "fa fa-arrow-right"></i></a>
+                            <h3>Благотворительность в Grid Dynamics</h3>
+                            <p>Новый год и Рождество - время волшебства и исполнения самых заветных желаний.</p>
+                            <a href = "../main/news/news1.html" class = "btn" style = "background: black; color: white">Подробнее <i class = "fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 
-                <div class = "col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                <div class = "item">
                     <div class = "thumbnail"> 
-                        <img src = "../tools/img/grid_dynamics2.png" alt ="">
+                        <img src = "../main/news/news0.png" alt ="" class = "img-responsive">
                         <div class = "caption">
-                            <h3><a href = "#">Зимняя студенческая практика в Grid Dynamics</a></h3>
+                            <h3>Зимняя студенческая практика в Grid Dynamics</h3>
                             <p>Саратовский офис компании Grid Dynamics открывает набор студентов IT-специальностей на ежегодную зимнюю практику.</p>
-                            <a href = "#" class = "btn" style = "background: black; color: white">Подробнее <i class = "fa fa-arrow-right"></i></a>
+                            <a href = "../main/news/news0.html" class = "btn" style = "background: black; color: white">Подробнее <i class = "fa fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
+                
             </div>
+            
+            <!-- Пагинация 
+            <nav align = "center">
+                <ul class="pagination">
+                    <li class = "disabled">
+                        <a href = "#">
+                            <i class = "fa fa-chevron-left"></i>
+                            <i class = "fa fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class = "disabled">
+                        <a href = "#">
+                            <i class = "fa fa-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class = "active"><a href = "#">1</a></li>
+                    <li><a href = "#">2</a></li>
+                    <li><a href = "#">3</a></li>
+                    <li><a href = "#">4</a></li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fa fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class = "fa fa-chevron-right"></i>
+                            <i class = "fa fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <nav>
+                <ul class = "pager">
+                    <li class = "previous"><a href = "#">&larr; Назад</a></li>
+                    <li class = "next disabled"><a href = "#">Вперед &rarr;</a></li>
+                </ul>
+            </nav>
+
+            Конец пагинации -->
+            
         </div>
 	  
 	  	<script src = "http://code.jquery.com/jquery-latest.js"></script>
 		<script src = "js/bootstrap.js"></script>
+        <script src = "js/salvattore.min.js"></script>
         
         <!-- Кнопка Вверх -->
         

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+<html>
+	<head>
+		<title> Saratov IT Guide </title>
+		<link href ="../css/bootstrap.css" rel = "stylesheet"></link>
+		<style>
+   			.fig {
+    			text-align: center; /* Выравнивание по центру */ 
+   			}
+            
+			.layer1 {
+				font: 14pt PlainScriptCTT обычный;  
+		    } 
+            
+			h1 {
+			    font: 200% PlainScriptCTT обычный;
+			}
+            
+            h4 {
+                text-indent: 30px;
+			}
+            
+            p {
+                text-indent: 50px;
+            }
+           
+	  </style>
+  	</head>
+	<body>
+		
+		<!-- Меню -->
+		<div class = "container-fluid">
+			
+			<div class = "row">
+				<div class = "navbar navbar-inverse">
+					<div class = "container">
+						<div class = "navbar-header">
+							<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#responsive-menu">
+								<span class = "sr-only">Открыть навигацию</span>
+								<span class = "icon-bar"></span>
+								<span class = "icon-bar"></span>
+								<span class = "icon-bar"></span>
+							</button>
+						</div>
+						<div class = "collapse navbar-collapse" id = "responsive-menu">
+							<ul class = "nav navbar-nav">
+								<li><a href = "../mainpage.html">Главная</a></li>
+								<li class="dropdown">
+									<a href = "#" class="dropdown-toggle" data-toggle="dropdown">Компании <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li><a href="../EPAM.html">Epam Systems</a></li>
+										<li><a href="../GridDynamics.html">Grid Dynamics</a></li>
+										<li><a href="../Mirantis.html">Mirantis</a></li>
+										<li><a href="../NetCracker.html">NetCracker</a></li>
+										<li><a href="../OpenSoft.html">OpenSoft</a></li>
+									</ul>
+								</li>
+								<li><a href = "../IT_news.html">Новости IT</a></li>
+								<li><a href = "../about_project.html">О проекте</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		
+		<div align="center">
+			<img src="news1.jpg">
+		</div>
+		
+        <div class="container-fluid">
+            <div class="layer1">
+            <h1 align = "center">Заголовок</h1>
+            <p>Новый год и Рождество - время волшебства и исполнения самых заветных желаний.</p>
+
+            <br>
+                
+            <p>Команда саратовского офиса Grid Dynamics уже несколько лет помогает детскому дому-интернату, расположенному в п. Широкий Буерак (Вольский район). И в канун самого главного праздника они собрали для детского дома вот такую гору подарков.</p>
+
+            <br>
+                
+            <p>3 января сотрудники компании поедут отвозить собранное в детский дом. Огромное спасибо всем, кто открыл свои сердца и подарил частичку праздничного чуда тем, кто в этом действительно нуждается. </p>
+                
+            <br>
+            <br>
+        </div>
+        
+        <script src = "http://code.jquery.com/jquery-latest.js"></script>
+		<script src = "../js/bootstrap.js"></script>
+
+        
+        <!-- Кнопка Вверх -->
+        
+        <style>
+            .back-to-top {
+                cursor: pointer;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display:none;
+                color: white;
+                background: black;
+            }
+        </style>
+        
+        <script>
+            $(document).ready(function()
+            {
+                $(window).scroll(function () 
+                {
+                    if ($(this).scrollTop() > 50) 
+                    {
+                        $('#back-to-top').fadeIn();
+                    } 
+                    else 
+                    {
+                        $('#back-to-top').fadeOut();
+                    }
+                });
+                
+                $('#back-to-top').click(function () 
+                {
+                    $('#back-to-top').tooltip('hide');
+                    $('body,html').animate({ scrollTop: 0}, 800);
+                    return false;
+                });
+ 
+                $('#back-to-top').tooltip('show');
+ 
+            });
+        </script>
+ 
+        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" style = "background: black">
+            <span class="glyphicon glyphicon-chevron-up" style = "color: white; background:black"></span>
+        </a>
+        
+	  </body>		
+</html>
