@@ -3,44 +3,33 @@
 <html>
 	<head>
 		<title> Saratov IT Guide </title>
-		<link href = "css/bootstrap.css" rel = "stylesheet">
-		<link href = "css/font-awesome.css" rel = "stylesheet">
+		<link href ="css/bootstrap.css" rel = "stylesheet"></link>
 		<style>
-			body {background: #F5F5F5 url(../tools/img/bg1.png);}
-			color: #F5F5F5;
    			.fig {
-    		  text-align: center; /* Выравнивание по центру */ 
+    			text-align: center; /* Выравнивание по центру */ 
    			}
-   			
-   			.layer1 {
+            
+			.layer1 {
 				font: 14pt PlainScriptCTT обычный;  
 		    } 
             
 			h1 {
 			    font: 200% PlainScriptCTT обычный;
 			}
-			h4 {
+            
+            h4 {
+                text-indent: 30px;
+			}
+            
+            p {
                 text-indent: 50px;
             }
-            
-            .carousel-indicators .active {
-                background-color: #000;
-            }
-            
-            .carousel-indicators li {
-                border: 1px solid #000;
-            }
-            
-            .carousel-caption {
-                color: #000;
-            }
            
-  		</style>
+	  </style>
   	</head>
 	<body>
 		
 		<!-- Меню -->
-        
 		<div class = "container-fluid">
 			
 			<div class = "row">
@@ -63,13 +52,12 @@
 										<li><a href="EPAM.html">Epam Systems</a></li>
 										<li><a href="GridDynamics.html">Grid Dynamics</a></li>
 										<li><a href="Mirantis.html">Mirantis</a></li>
-										<li><a href="Neoflex.html">Neoflex</a></li>
 										<li><a href="NetCracker.html">NetCracker</a></li>
 										<li><a href="OpenSoft.html">OpenSoft</a></li>
 									</ul>
 								</li>
 								<li><a href = "IT_news.html">Новости IT</a></li>
-								<li><a href = "IT_profession.html">IT профессии</a></li>
+                                <li><a href="IT_profession.html">IT профессии</a></li>
 								<li><a href = "about_project.html">О проекте</a></li>
 							</ul>
 						</div>
@@ -77,5 +65,114 @@
 				</div>
 			</div>
 		</div>	
-	</body>
+		
+		<div align="center">
+			<img src="../tools/img/profs0.jpg" class="img-thumbnail">
+		</div>
+        
+        <br>
+        <br>
+        <br>
+        
+        
+        <div class="table-responsive">
+            <table class="table table-bordered"  style = "width: 85%" align = "center">
+                <td>
+		
+        <div class="container-fluid">
+            <div class="layer1">
+            <h1 align = "center">IT профессии</h1>
+            <p>В сфере IT существует огромное множество вакансий, среди которых, конечно, каждый может найти свое место. Например, если человек не хочет писать код и заниматься разработкой, но хочет общения с людьми, приобретение языковых навыков, он может стать бизнес аналитиком. Бизнес аналитик занимается сбором, анализом и работой с требованиями к ПО. Если работник – творческая личность, то ему стоит попробовать себя в роли дизайнера. Таким образом, такое деление на профессии, команде, занимающейся созданием какого-то проекта, удается добиться оптимального распределения сил и получения максимально возможного результата.</p>
+
+            <br>
+                
+            <p>Существующие и наиболее популярные профессии в IT:</p>
+                <br>
+                
+<li>Бизнес аналитик — человек, занимающийся анализом и работой с требованиями к программным продуктам.</li>
+                <br>
+<li>QA — человек, который занимается контролем качества ПО на всех этапах разработки (делает так, чтобы максимально сократить количество ошибок).</li>
+                <br>
+<li>Тестировщик — человек, который занимается тестированием ПО, ищет ошибки в приложении. Если ошибки выявляются, то составляет отчет об ошибках и передает его разработчикам.</li>
+                <br>
+<li>Разработчик — человек, занимающийся написанием кода. (разработчики бывают самыми разными. Например, front-end разработчик (интерфейс) и back-end разработчик (функциональная часть приложения), Java разработчик, C++ разработчик и так далее.</li>
+                <br>
+<li>Архитектор ПО — человек, принимающий ключевые проектные решения относительно внутреннего устройства программной системы и её технических интерфейсов.</li>
+                <br>
+<li>DevOps-инженер — человек, являющийся связующим звеном между разработчиками и тестировщиками ПО, занимающийся администрированием всех компонент больших систем IT компаний.</li>
+
+            <br>
+                <br>
+                
+            <p>Конечно, это не все вакансии, которые существуют в IT компаниях. В каждой компании работают различные виды тестировщиков, разработчиков и так далее.</p>
+                
+            <br>
+            <br>
+        </div>
+            
+        </td>
+            </table>
+        </div>
+        
+        <br>
+            
+        
+        <div align="center">
+			<img src="../tools/img/profs1.jpg" class="img-thumbnail">
+		</div>
+        
+        <br>
+        <br>
+        <br>
+        
+        <script src = "http://code.jquery.com/jquery-latest.js"></script>
+		<script src = "js/bootstrap.js"></script>
+
+        
+        <!-- Кнопка Вверх -->
+        
+        <style>
+            .back-to-top {
+                cursor: pointer;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display:none;
+                color: white;
+                background: black;
+            }
+        </style>
+        
+        <script>
+            $(document).ready(function()
+            {
+                $(window).scroll(function () 
+                {
+                    if ($(this).scrollTop() > 50) 
+                    {
+                        $('#back-to-top').fadeIn();
+                    } 
+                    else 
+                    {
+                        $('#back-to-top').fadeOut();
+                    }
+                });
+                
+                $('#back-to-top').click(function () 
+                {
+                    $('#back-to-top').tooltip('hide');
+                    $('body,html').animate({ scrollTop: 0}, 800);
+                    return false;
+                });
+ 
+                $('#back-to-top').tooltip('show');
+ 
+            });
+        </script>
+ 
+        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" style = "background: black">
+            <span class="glyphicon glyphicon-chevron-up" style = "color: white; background:black"></span>
+        </a>
+        
+	  </body>		
 </html>
